@@ -9,7 +9,7 @@ const textureLoader = new THREE.TextureLoader()
 const normalTexture = textureLoader.load('/textures/NormalMap.png')
 
 // Debug
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -52,13 +52,13 @@ pointLight2.intensity = 0.85
 
 scene.add(pointLight2)
 
-const light1 = gui.addFolder('Light1') //Step 12 Create a Folder on Console
+// const light1 = gui.addFolder('Light1') //Step 12 Create a Folder on Console
 
-//Step 10 Add Values to console
-light1.add(pointLight2.position , 'x').min(-6).max(6).step(0.01) 
-light1.add(pointLight2.position , 'y').min(-3).max(3).step(0.01)
-light1.add(pointLight2.position , 'z').min(-3).max(3).step(0.01)
-light1.add(pointLight2 , 'intensity').min(0).max(10).step(0.01)
+// //Step 10 Add Values to console
+// light1.add(pointLight2.position , 'x').min(-6).max(6).step(0.01) 
+// light1.add(pointLight2.position , 'y').min(-3).max(3).step(0.01)
+// light1.add(pointLight2.position , 'z').min(-3).max(3).step(0.01)
+// light1.add(pointLight2 , 'intensity').min(0).max(10).step(0.01)
 
 // const pointLightHelper = new THREE.PointLightHelper(pointLight2 , 1)
 // scene.add(pointLightHelper)
@@ -74,12 +74,12 @@ pointLight3.position.z = -0.06
 pointLight3.intensity = 1.81
 
 scene.add(pointLight3)
-const light2 = gui.addFolder('Light2')
+// const light2 = gui.addFolder('Light2')
 
-light2.add(pointLight3.position , 'x').min(-6).max(6).step(0.01) 
-light2.add(pointLight3.position , 'y').min(-3).max(3).step(0.01)
-light2.add(pointLight3.position , 'z').min(-3).max(3).step(0.01)
-light2.add(pointLight3 , 'intensity').min(0).max(10).step(0.01)
+// light2.add(pointLight3.position , 'x').min(-6).max(6).step(0.01) 
+// light2.add(pointLight3.position , 'y').min(-3).max(3).step(0.01)
+// light2.add(pointLight3.position , 'z').min(-3).max(3).step(0.01)
+// light2.add(pointLight3 , 'intensity').min(0).max(10).step(0.01)
 
 // const pointLightHelper2 = new THREE.PointLightHelper(pointLight3 , 1)
 // scene.add(pointLightHelper2)
@@ -93,11 +93,11 @@ const light2Color = {
 }
 
 //Step 14 Add Color to Console
-light2.addColor(light2Color  , 'color').onChange(()=>{
+// light2.addColor(light2Color  , 'color').onChange(()=>{
 
-    pointLight3.color.set(light2Color.color)
+//     pointLight3.color.set(light2Color.color)
 
-})
+// })
 
 
 
